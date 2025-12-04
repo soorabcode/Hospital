@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Soorab Clinic - Premier healthcare services with compassionate care and modern facilities">
+    <title>Soorab Clinic | Premier Healthcare Services</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <!-- Enhanced Loading Animation -->
+    <div class="loading-spinner" role="status" aria-live="polite" aria-label="Loading Soorab Clinic website">
+        <div class="spinner-container">
+            <div class="spinner" aria-hidden="true"></div>
+            <div class="loading-text" aria-hidden="true">
+                <span>S</span><span>o</span><span>o</span><span>r</span><span>a</span><span>b</span>
+                <span>C</span><span>l</span><span>i</span><span>n</span><span>i</span><span>c</span>
+            </div>
+        </div>
+        <div class="loading-progress">
+            <div class="progress-bar" aria-hidden="true"></div>
+        </div>
+        <p class="loading-subtitle">Your Health, Our Priority</p>
+    </div>
+
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+        <div class="container">
+            <div class="logo-container">
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <span>Soorab Clinic</span>
+                </a>
+                <p class="tagline">Where Care Meets Excellence</p>
+            </div>
+            <nav class="main-nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="#home" class="active" aria-current="page"><i class="fas fa-home" aria-hidden="true"></i> Home</a></li>
+                    <li><a href="#services"><i class="fas fa-heartbeat" aria-hidden="true"></i> Services</a></li>
+                    <li><a href="#doctors"><i class="fas fa-user-md" aria-hidden="true"></i> Our Doctors</a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle" aria-hidden="true"></i> About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn" aria-haspopup="true" aria-expanded="false"><i class="fas fa-capsules" aria-hidden="true"></i> Resources <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+                        <div class="dropdown-content" role="menu">
+                            <a href="#faqs" role="menuitem"><i class="fas fa-question-circle" aria-hidden="true"></i> FAQs</a>
+                            <a href="#downloads" role="menuitem"><i class="fas fa-download" aria-hidden="true"></i> Downloads</a>
+                            <a href="#blog" role="menuitem"><i class="fas fa-newspaper" aria-hidden="true"></i> Health Blog</a>
+                            <a href="#testimonials" role="menuitem"><i class="fas fa-star" aria-hidden="true"></i> Testimonials</a>
+                        </div>
+                    </li>
+                    <li><a href="#contact"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="appointment-btn" id="bookAppointmentBtn">
+                    <i class="fas fa-calendar-check"></i> Book Appointment
+                </button>
+                <button class="auth-btn" id="loginBtn">
+                    <i class="fas fa-user"></i> <span id="userName">Login</span>
+                </button>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Animation -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-award"></i> Trusted Healthcare Since 2010
+            </div>
+            <h1>Your Health, <span class="highlight-text">Our Priority</span></h1>
+            <p class="hero-subtitle">Comprehensive medical care with a personal touch. Experience the Soorab difference today.</p>
+            <div class="hero-buttons">
+                <button class="cta-primary" id="heroAppointmentBtn">
+                    <i class="fas fa-stethoscope"></i> Book Appointment
+                </button>
+                <button class="cta-secondary">
+                    <i class="fas fa-video"></i> Virtual Consultation
+                </button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="25">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">Expert Doctors</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="10000">0</div>
+                    <div class="stat-label">Patients Served</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="medical-animation">
+                <div class="pulse-circle"></div>
+                <div class="doctor-image">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80" alt="Medical Team">
+                </div>
+            </div>
+            <div class="floating-badges">
+                <div class="badge">
+                    <i class="fas fa-shield-alt"></i> HIPAA Compliant
+                </div>
+                <div class="badge">
+                    <i class="fas fa-medal"></i> JCI Accredited
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Our <span class="highlight-text">Medical Services</span></h2>
+                <p>Comprehensive healthcare solutions tailored to your needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Cardiology</h3>
+                    <p>Advanced heart care with state-of-the-art diagnostic equipment and expert cardiologists.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Neurology</h3>
+                    <p>Comprehensive neurological care including diagnosis and treatment of brain and nervous system disorders.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-lungs"></i>
+                    </div>
+                    <h3>Pulmonology</h3>
+                    <p>Specialized respiratory care with advanced pulmonary function testing and treatment options.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-bone"></i>
+                    </div>
+                    <h3>Orthopedics</h3>
+                    <p>Expert care for bones, joints, and muscles with minimally invasive surgical options.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3>Pediatrics</h3>
+                    <p>Gentle, compassionate care for children from newborns to teenagers with child-friendly facilities.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>General Medicine</h3>
+                    <p>Comprehensive primary care services for all ages with preventive health focus.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="doctors-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Meet Our <span class="highlight-text">Expert Doctors</span></h2>
+                <p>Highly qualified medical professionals dedicated to your health</p>
+            </div>
+            <div class="doctors-grid">
+                <div class="doctor-card animate-on-scroll">
+                    <div class="doctor-image">
+                        <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=400&q=80" alt="Dr. Sarah Johnson">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Sarah Johnson</h3>
+                        <p class="specialty">Cardiologist</p>
+                        <p class="experience"><i class="fas fa-calendar"></i> 15+ years experience</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(42 reviews)</span>
+                        </div>
+                        <button class="profile-btn">View Profile</button>
+                    </div>
+                </div>
+                <div class="doctor-card animate-on-scroll">
+                    <div class="doctor-image">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=400&q=80" alt="Dr. Michael Chen">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Michael Chen</h3>
+                        <p class="specialty">Neurologist</p>
+                        <p class="experience"><i class="fas fa-calendar"></i> 12+ years experience</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(38 reviews)</span>
+                        </div>
+                        <button class="profile-btn">View Profile</button>
+                    </div>
+                </div>
+                <div class="doctor-card animate-on-scroll">
+                    <div class="doctor-image">
+                        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=400&q=80" alt="Dr. Emily Rodriguez">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Emily Rodriguez</h3>
+                        <p class="specialty">Pediatrician</p>
+                        <p class="experience"><i class="fas fa-calendar"></i> 10+ years experience</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(45 reviews)</span>
+                        </div>
+                        <button class="profile-btn">View Profile</button>
+                    </div>
+                </div>
+                <div class="doctor-card animate-on-scroll">
+                    <div class="doctor-image">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=400&q=80" alt="Dr. James Wilson">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. James Wilson</h3>
+                        <p class="specialty">Orthopedic Surgeon</p>
+                        <p class="experience"><i class="fas fa-calendar"></i> 18+ years experience</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(32 reviews)</span>
+                        </div>
+                        <button class="profile-btn">View Profile</button>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all animate-on-scroll">
+                <button class="view-all-btn">View All Doctors <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="appointment-section">
+        <div class="container">
+            <div class="appointment-container">
+                <div class="appointment-form animate-on-scroll">
+                    <h2>Book Your <span class="highlight-text">Appointment</span></h2>
+                    <p>Fill out the form below and our team will contact you shortly to confirm your appointment.</p>
+                    <form id="appointmentForm">
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> Full Name*</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email"><i class="fas fa-envelope"></i> Email*</label>
+                                <input type="email" id="email" placeholder="john.doe@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone"><i class="fas fa-phone"></i> Phone*</label>
+                                <input type="tel" id="phone" placeholder="(123) 456-7890" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service"><i class="fas fa-heartbeat"></i> Service*</label>
+                                <select id="service" required>
+                                    <option value="">Select Service</option>
+                                    <option value="cardiology">Cardiology</option>
+                                    <option value="neurology">Neurology</option>
+                                    <option value="pediatrics">Pediatrics</option>
+                                    <option value="orthopedics">Orthopedics</option>
+                                    <option value="general">General Medicine</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="doctor"><i class="fas fa-user-md"></i> Preferred Doctor</label>
+                                <select id="doctor">
+                                    <option value="">Any Available Doctor</option>
+                                    <option value="johnson">Dr. Sarah Johnson</option>
+                                    <option value="chen">Dr. Michael Chen</option>
+                                    <option value="rodriguez">Dr. Emily Rodriguez</option>
+                                    <option value="wilson">Dr. James Wilson</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date"><i class="fas fa-calendar"></i> Preferred Date*</label>
+                                <input type="date" id="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time"><i class="fas fa-clock"></i> Preferred Time*</label>
+                                <select id="time" required>
+                                    <option value="">Select Time</option>
+                                    <option value="morning">9:00 AM - 12:00 PM</option>
+                                    <option value="afternoon">1:00 PM - 4:00 PM</option>
+                                    <option value="evening">5:00 PM - 8:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-comment"></i> Additional Information</label>
+                            <textarea id="message" rows="4" placeholder="Any specific concerns or requirements..."></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="terms" required>
+                            <label for="terms">I agree to the <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a></label>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-calendar-check"></i> Book Appointment
+                        </button>
+                    </form>
+                </div>
+                <div class="appointment-info animate-on-scroll">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Working Hours</h3>
+                            <p><strong>Monday - Friday:</strong> 8:00 AM - 8:00 PM</p>
+                            <p><strong>Saturday:</strong> 9:00 AM - 5:00 PM</p>
+                            <p><strong>Sunday:</strong> Emergency Only</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Our Location</h3>
+                            <p>123 Healthcare Avenue</p>
+                            <p>Medical District, City, State 12345</p>
+                            <a href="#" class="map-link">View on Map <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="info-card emergency">
+                        <div class="info-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Emergency Contact</h3>
+                            <p class="emergency-number">(123) 456-7890</p>
+                            <p>24/7 Emergency Services Available</p>
+                        </div>
+                    </div>
+                    <div class="info-card insurance">
+                        <div class="info-icon">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Insurance Accepted</h3>
+                            <p>We accept most major insurance plans including:</p>
+                            <div class="insurance-logos">
+                                <span>Blue Cross</span>
+                                <span>Aetna</span>
+                                <span>Cigna</span>
+                                <span>UnitedHealth</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patient Portal Section (replaces Cart/Wishlist) -->
+    <section id="patient-portal" class="patient-portal-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Your <span class="highlight-text">Patient Portal</span></h2>
+                <p>Access your medical records, appointments, and health information securely</p>
+            </div>
+            <div class="portal-grid">
+                <div class="portal-card animate-on-scroll">
+                    <div class="portal-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>My Appointments</h3>
+                    <p>View, manage, and schedule your upcoming appointments with ease.</p>
+                    <button class="portal-btn">Access Appointments</button>
+                </div>
+                <div class="portal-card animate-on-scroll">
+                    <div class="portal-icon">
+                        <i class="fas fa-file-medical"></i>
+                    </div>
+                    <h3>Medical Records</h3>
+                    <p>Securely access your lab results, prescriptions, and health history.</p>
+                    <button class="portal-btn">View Records</button>
+                </div>
+                <div class="portal-card animate-on-scroll">
+                    <div class="portal-icon">
+                        <i class="fas fa-prescription-bottle"></i>
+                    </div>
+                    <h3>Medication Management</h3>
+                    <p>Track your medications, request refills, and set reminders.</p>
+                    <button class="portal-btn">Manage Medications</button>
+                </div>
+                <div class="portal-card animate-on-scroll">
+                    <div class="portal-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Health Tracker</h3>
+                    <p>Monitor your vital signs, symptoms, and health goals over time.</p>
+                    <button class="portal-btn">Track Health</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>What Our <span class="highlight-text">Patients Say</span></h2>
+                <p>Real experiences from our valued patients</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-header">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="verified">
+                            <i class="fas fa-check-circle"></i> Verified Patient
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"The level of care I received at Soorab Clinic was exceptional. Dr. Johnson took the time to explain everything thoroughly and made me feel completely at ease. The staff was professional and compassionate throughout my entire visit."</p>
+                    <div class="patient-info">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Patient">
+                        <div class="patient-details">
+                            <h4>Sarah Thompson</h4>
+                            <p>Cardiology Patient</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-header">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="verified">
+                            <i class="fas fa-check-circle"></i> Verified Patient
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"I was nervous about my first visit, but the team at Soorab Clinic made the experience seamless. From the easy online booking to the warm welcome at reception, everything was perfectly organized. Dr. Chen's expertise gave me confidence in my treatment plan."</p>
+                    <div class="patient-info">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Patient">
+                        <div class="patient-details">
+                            <h4>Michael Rodriguez</h4>
+                            <p>Neurology Patient</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-header">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="verified">
+                            <i class="fas fa-check-circle"></i> Verified Patient
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"My child was seen by Dr. Emily for a persistent cough, and I was impressed by her gentle approach and thorough examination. The clinic's child-friendly environment made my daughter feel comfortable. We received excellent follow-up care and she's now completely recovered."</p>
+                    <div class="patient-info">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Patient">
+                        <div class="patient-details">
+                            <h4>Jennifer Miller</h4>
+                            <p>Pediatrics Patient Parent</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="dots-container">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>About <span class="highlight-text">Soorab Clinic</span></h2>
+                <p>Our commitment to excellence in healthcare</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image animate-on-scroll">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=600&q=80" alt="Soorab Clinic">
+                        <div class="overlay">
+                            <div class="stats">
+                                <div class="stat-item">
+                                    <span class="stat-number" data-count="25">0</span>
+                                    <span class="stat-label">Years of Excellence</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number" data-count="50">0</span>
+                                    <span class="stat-label">Medical Professionals</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number" data-count="10000">0</span>
+                                    <span class="stat-label">Patients Served</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text animate-on-scroll">
+                    <h3>Our Mission & Vision</h3>
+                    <p>At Soorab Clinic, we are dedicated to providing exceptional healthcare services with compassion, integrity, and innovation. Our mission is to improve the health and well-being of our community through comprehensive medical care, patient education, and preventive health initiatives.</p>
+                    <p>Since our founding in 2000, we have grown from a small family practice to a premier multi-specialty medical center, serving thousands of patients with the highest standards of care. Our vision is to be the healthcare provider of choice for families in our community, recognized for clinical excellence and patient-centered care.</p>
+                    <div class="achievements">
+                        <div class="achievement-item">
+                            <i class="fas fa-award"></i>
+                            <div class="achievement-text">
+                                <h4>Accredited Facility</h4>
+                                <p>Joint Commission accredited since 2010</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-medal"></i>
+                            <div class="achievement-text">
+                                <h4>Award-Winning Care</h4>
+                                <p>Recognized for excellence in patient satisfaction</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div class="achievement-text">
+                                <h4>Continuing Education</h4>
+                                <p>All staff trained in latest medical advancements</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="read-more-btn">Learn More About Us <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-container animate-on-scroll">
+                <div class="newsletter-content">
+                    <h2>Stay Updated with <span class="highlight-text">Health Tips</span></h2>
+                    <p>Subscribe to our newsletter for the latest health news, wellness tips, and clinic updates.</p>
+                </div>
+                <form id="newsletterForm" class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="subscribe-btn">Subscribe</button>
+                    </div>
+                    <p class="privacy-note">We respect your privacy. Your information will never be shared with third parties.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & FAQs Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="highlight-text">Contact Us</span> & FAQs</h2>
+                <p>We're here to help you with any questions or concerns</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-form animate-on-scroll">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name"><i class="fas fa-user"></i> Full Name*</label>
+                                <input type="text" id="contact-name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email"><i class="fas fa-envelope"></i> Email*</label>
+                                <input type="email" id="contact-email" placeholder="john.doe@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject"><i class="fas fa-tag"></i> Subject*</label>
+                            <input type="text" id="contact-subject" placeholder="Regarding my appointment" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message"><i class="fas fa-comment"></i> Message*</label>
+                            <textarea id="contact-message" rows="5" placeholder="Please share your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <div class="contact-info animate-on-scroll">
+                    <div class="info-block">
+                        <h3>Get in Touch</h3>
+                        <div class="contact-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>123 Healthcare Avenue, Medical District<br>City, State 12345</p>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-phone"></i>
+                            <p>Phone: (123) 456-7890</p>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <p>info@soorabclinic.com</p>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-clock"></i>
+                            <p>Mon-Fri: 8:00 AM - 8:00 PM<br>Sat: 9:00 AM - 5:00 PM<br>Sun: Emergency Only</p>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.142293795015!2d-73.98784148459356!3d40.73061047932794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1646968970644!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section id="faqs" class="faqs-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked <span class="highlight-text">Questions</span></h2>
+                <p>Find answers to common questions about our services</p>
+            </div>
+            <div class="faqs-container">
+                <div class="faq-category">
+                    <h3><i class="fas fa-question-circle"></i> General Questions</h3>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What services does Soorab Clinic offer?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Soorab Clinic offers comprehensive healthcare services including cardiology, neurology, pediatrics, orthopedics, general medicine, and emergency care. We also provide preventive health screenings, wellness programs, and specialized diagnostic services.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Do you accept insurance?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we accept most major insurance plans including Blue Cross Blue Shield, Aetna, Cigna, UnitedHealthcare, and Medicare. We also offer self-pay options and flexible payment plans. Please contact our billing department for specific insurance inquiries.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What are your operating hours?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Our regular operating hours are Monday through Friday from 8:00 AM to 8:00 PM, and Saturday from 9:00 AM to 5:00 PM. We provide 24/7 emergency services for urgent medical needs. Please call ahead for weekend and holiday appointments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-category">
+                    <h3><i class="fas fa-calendar-check"></i> Appointments</h3>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            How do I book an appointment?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You can book an appointment through our website using the online booking form, by calling our appointment desk at (123) 456-7890, or by visiting our clinic in person. We recommend booking at least 1-2 weeks in advance for non-urgent appointments.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What should I bring to my first appointment?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>For your first appointment, please bring your insurance card, photo ID, a list of current medications, any relevant medical records or test results, and completed new patient forms (available for download on our website). Arrive 15 minutes early to complete any remaining paperwork.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-category">
+                    <h3><i class="fas fa-user-md"></i> Medical Services</h3>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Do you offer telemedicine services?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we offer virtual consultations for follow-up appointments, medication management, and certain types of consultations. Telemedicine services are available through our secure patient portal. Not all conditions are suitable for virtual care, so please discuss with your provider.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            How do I get my test results?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Your test results will be available through our secure patient portal within 3-5 business days for most tests. Your provider will contact you if any results require immediate attention. You can also call our office to request results after they have been reviewed by your physician.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Blog Section -->
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Health <span class="highlight-text">Blog</span></h2>
+                <p>Stay informed with the latest health tips and medical insights</p>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card animate-on-scroll">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=400&q=80" alt="Heart Health">
+                        <div class="blog-category">Cardiology</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Understanding Heart Disease Prevention</h3>
+                        <p>Learn about the key factors that contribute to heart health and how to maintain a healthy cardiovascular system.</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Dec 15, 2025</span>
+                            <span><i class="fas fa-user-md"></i> Dr. Sarah Johnson</span>
+                        </div>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card animate-on-scroll">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=400&q=80" alt="Mental Health">
+                        <div class="blog-category">Mental Health</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Managing Stress in Modern Life</h3>
+                        <p>Practical strategies for maintaining mental wellness and managing stress in today's fast-paced world.</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Dec 12, 2025</span>
+                            <span><i class="fas fa-user-md"></i> Dr. Michael Chen</span>
+                        </div>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card animate-on-scroll">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=400&q=80" alt="Children's Health">
+                        <div class="blog-category">Pediatrics</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Childhood Vaccinations: What Parents Need to Know</h3>
+                        <p>Essential information about childhood immunization schedules and the importance of vaccines.</p>
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Dec 10, 2025</span>
+                            <span><i class="fas fa-user-md"></i> Dr. Emily Rodriguez</span>
+                        </div>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all animate-on-scroll">
+                <button class="view-all-btn">View All Articles <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Tips Carousel Section -->
+    <section class="health-tips-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Daily <span class="highlight-text">Health Tips</span></h2>
+                <p>Quick tips for maintaining a healthy lifestyle</p>
+            </div>
+            <div class="tips-carousel">
+                <div class="tip-card animate-on-scroll">
+                    <div class="tip-icon">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3>Eat More Fruits</h3>
+                    <p>Incorporate at least 5 servings of fruits and vegetables into your daily diet for optimal nutrition.</p>
+                </div>
+                <div class="tip-card animate-on-scroll">
+                    <div class="tip-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Stay Active</h3>
+                    <p>Aim for at least 30 minutes of moderate exercise daily to maintain cardiovascular health.</p>
+                </div>
+                <div class="tip-card animate-on-scroll">
+                    <div class="tip-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3>Get Enough Sleep</h3>
+                    <p>Adults should aim for 7-9 hours of quality sleep each night for optimal health.</p>
+                </div>
+                <div class="tip-card animate-on-scroll">
+                    <div class="tip-icon">
+                        <i class="fas fa-hand-holding-water"></i>
+                    </div>
+                    <h3>Stay Hydrated</h3>
+                    <p>Drink at least 8 glasses of water daily to maintain proper hydration and bodily functions.</p>
+                </div>
+                <div class="tip-card animate-on-scroll">
+                    <div class="tip-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Mental Wellness</h3>
+                    <p>Practice mindfulness and stress-reduction techniques to support mental health.</p>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloads Section -->
+    <section id="downloads" class="downloads-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Health <span class="highlight-text">Resources</span></h2>
+                <p>Downloadable forms, guides, and educational materials</p>
+            </div>
+            <div class="downloads-grid">
+                <div class="download-card animate-on-scroll">
+                    <div class="download-icon">
+                        <i class="fas fa-file-medical"></i>
+                    </div>
+                    <h3>New Patient Forms</h3>
+                    <p>Complete these forms before your first visit to save time.</p>
+                    <a href="#" class="download-link">
+                        <i class="fas fa-download"></i> Download Forms (PDF)
+                    </a>
+                </div>
+                <div class="download-card animate-on-scroll">
+                    <div class="download-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Health Guides</h3>
+                    <p>Educational materials on common health conditions and prevention.</p>
+                    <a href="#" class="download-link">
+                        <i class="fas fa-download"></i> View Health Guides
+                    </a>
+                </div>
+                <div class="download-card animate-on-scroll">
+                    <div class="download-icon">
+                        <i class="fas fa-prescription"></i>
+                    </div>
+                    <h3>Medication List</h3>
+                    <p>Keep track of your medications with our printable template.</p>
+                    <a href="#" class="download-link">
+                        <i class="fas fa-download"></i> Download Template
+                    </a>
+                </div>
+                <div class="download-card animate-on-scroll">
+                    <div class="download-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Privacy Policy</h3>
+                    <p>Learn about how we protect your personal health information.</p>
+                    <a href="#" class="download-link">
+                        <i class="fas fa-download"></i> View Policy
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Navigation Bar -->
+    <footer class="bottom-nav">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="logo-footer">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>Soorab Clinic</span>
+                    </div>
+                    <p>Providing compassionate, high-quality healthcare services to our community for over 25 years. Your health is our priority.</p>
+                    <div class="social-media">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#doctors"><i class="fas fa-chevron-right"></i> Our Doctors</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="#faqs"><i class="fas fa-chevron-right"></i> FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Cardiology</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Neurology</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Pediatrics</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Orthopedics</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> General Medicine</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Emergency Care</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Healthcare Avenue, Medical District, City, State 12345</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>(123) 456-7890</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@soorabclinic.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 8:00 AM - 8:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span class="current-year"></span> Soorab Clinic. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                <p class="accreditation">Accredited by The Joint Commission | HIPAA Compliant</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Auth Modal -->
+    <div id="authModal" class="modal">
+        <div class="modal-content auth-modal">
+            <span class="close-btn">&times;</span>
+            <div class="auth-header">
+                <h2>Welcome to Soorab Clinic</h2>
+                <p>Please sign in to access your patient portal</p>
+            </div>
+            <div id="g_id_onload"
+                data-client_id="YOUR_GOOGLE_CLIENT_ID"
+                data-context="signin"
+                data-ux_mode="popup"
+                data-callback="handleCredentialResponse"
+                data-auto_prompt="false">
+            </div>
+            <div class="g_id_signin"
+                data-type="standard"
+                data-shape="rectangular"
+                data-theme="outline"
+                data-text="signin_with"
+                data-size="large"
+                data-logo_alignment="left">
+            </div>
+            <div class="auth-footer">
+                <p>Your information is secure and protected under HIPAA compliance</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Patient Portal Modal (Full Screen) -->
+    <div id="patientPortal" class="modal full-screen-modal">
+        <div class="modal-content portal-modal">
+            <span class="close-btn">&times;</span>
+            <div class="portal-header">
+                <h2>My Patient Portal</h2>
+                <p>Welcome, <span id="portalUserName">Patient</span>!</p>
+            </div>
+            <div class="portal-content">
+                <div class="portal-section">
+                    <h3>My Appointments</h3>
+                    <div class="appointments-list">
+                        <div class="appointment-item">
+                            <div class="appointment-date">Dec 15, 2025</div>
+                            <div class="appointment-details">
+                                <h4>Cardiology Checkup</h4>
+                                <p>Dr. Sarah Johnson • 10:30 AM</p>
+                                <div class="appointment-status confirmed">Confirmed</div>
+                            </div>
+                        </div>
+                        <div class="appointment-item">
+                            <div class="appointment-date">Dec 22, 2025</div>
+                            <div class="appointment-details">
+                                <h4>Follow-up Consultation</h4>
+                                <p>Dr. Michael Chen • 2:15 PM</p>
+                                <div class="appointment-status pending">Pending Confirmation</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="view-all-btn">View All Appointments</button>
+                </div>
+                <div class="portal-section">
+                    <h3>Quick Actions</h3>
+                    <div class="quick-actions">
+                        <button class="action-btn">
+                            <i class="fas fa-calendar-plus"></i>
+                            <span>Book New Appointment</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-file-medical"></i>
+                            <span>View Medical Records</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-prescription-bottle"></i>
+                            <span>Request Prescription Refill</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-comments"></i>
+                            <span>Send Message to Doctor</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="portal-section">
+                    <h3>Health Summary</h3>
+                    <div class="health-summary">
+                        <div class="health-item">
+                            <span>Last Visit:</span>
+                            <strong>Nov 28, 2025</strong>
+                        </div>
+                        <div class="health-item">
+                            <span>Blood Pressure:</span>
+                            <strong>120/80 mmHg</strong>
+                        </div>
+                        <div class="health-item">
+                            <span>Allergies:</span>
+                            <strong>None</strong>
+                        </div>
+                        <div class="health-item">
+                            <span>Medications:</span>
+                            <strong>2 Active</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portal-footer">
+                <button class="logout-btn">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
