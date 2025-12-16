@@ -11,80 +11,10 @@
     <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
-    <!-- Enhanced Particle Animation Background -->
-    <div class="particles-container" aria-hidden="true">
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-    </div>
-
-    <!-- Interactive Cursor Effect -->
-    <div class="cursor" id="cursor"></div>
-    <div class="cursor-follower" id="cursorFollower"></div>
-
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu-overlay"></div>
-
-    <!-- Floating Action Button -->
-    <div class="fab-container">
-        <button class="fab-main" id="fabMain">
-            <i class="fas fa-plus"></i>
-        </button>
-        <div class="fab-menu" id="fabMenu">
-            <button class="fab-item" data-tooltip="Emergency Call">
-                <i class="fas fa-phone"></i>
-            </button>
-            <button class="fab-item" data-tooltip="Virtual Consultation">
-                <i class="fas fa-video"></i>
-            </button>
-            <button class="fab-item" data-tooltip="Book Appointment">
-                <i class="fas fa-calendar-plus"></i>
-            </button>
-            <button class="fab-item" data-tooltip="Live Chat">
-                <i class="fas fa-comments"></i>
-            </button>
-        </div>
-    </div>
-
-    <!-- Emergency Contact Floating Widget -->
-    <div class="emergency-widget" id="emergencyWidget">
-        <div class="emergency-pulse"></div>
-        <button class="emergency-btn" id="emergencyBtn">
-            <i class="fas fa-ambulance"></i>
-            <span>Emergency</span>
-        </button>
-        <div class="emergency-panel" id="emergencyPanel">
-            <h4>Emergency Services</h4>
-            <p>24/7 Emergency Care Available</p>
-            <button class="emergency-call" id="emergencyCallBtn">
-                <i class="fas fa-phone"></i> Call 911
-            </button>
-            <button class="emergency-info">
-                <i class="fas fa-info-circle"></i> Emergency Info
-            </button>
-        </div>
-    </div>
-
-    <!-- Enhanced Loading Animation -->
-    <div class="loading-spinner" role="status" aria-live="polite" aria-label="Loading Soorab Clinic website">
-        <div class="spinner-container">
-            <div class="spinner" aria-hidden="true"></div>
-            <div class="loading-text" aria-hidden="true">
-                <span>S</span><span>o</span><span>o</span><span>r</span><span>a</span><span>b</span>
-                <span>C</span><span>l</span><span>i</span><span>n</span><span>i</span><span>c</span>
-            </div>
-        </div>
-        <div class="loading-progress">
-            <div class="progress-bar" aria-hidden="true"></div>
-        </div>
-        <p class="loading-subtitle">Your Health, Our Priority</p>
+    <!-- Loading Animation -->
+    <div class="loading-spinner">
+        <div class="spinner"></div>
+        <p>Loading Soorab Clinic...</p>
     </div>
 
     <!-- Top Navigation Bar -->
@@ -99,87 +29,32 @@
                 </a>
                 <p class="tagline">Where Care Meets Excellence</p>
             </div>
-            <nav class="main-nav" role="navigation" aria-label="Main navigation">
+            <nav class="main-nav">
                 <ul class="nav-links">
-                    <li><a href="#home" class="active" aria-current="page"><i class="fas fa-home" aria-hidden="true"></i> Home</a></li>
-                    <li><a href="#services"><i class="fas fa-heartbeat" aria-hidden="true"></i> Services</a></li>
-                    <li><a href="#doctors"><i class="fas fa-user-md" aria-hidden="true"></i> Our Doctors</a></li>
-                    <li><a href="#about"><i class="fas fa-info-circle" aria-hidden="true"></i> About Us</a></li>
+                    <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#services"><i class="fas fa-heartbeat"></i> Services</a></li>
+                    <li><a href="#doctors"><i class="fas fa-user-md"></i> Our Doctors</a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropbtn" aria-haspopup="true" aria-expanded="false"><i class="fas fa-capsules" aria-hidden="true"></i> Resources <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
-                        <div class="dropdown-content" role="menu">
-                            <a href="#faqs" role="menuitem"><i class="fas fa-question-circle" aria-hidden="true"></i> FAQs</a>
-                            <a href="#downloads" role="menuitem"><i class="fas fa-download" aria-hidden="true"></i> Downloads</a>
-                            <a href="#blog" role="menuitem"><i class="fas fa-newspaper" aria-hidden="true"></i> Health Blog</a>
-                            <a href="#testimonials" role="menuitem"><i class="fas fa-star" aria-hidden="true"></i> Testimonials</a>
+                        <a href="#" class="dropbtn"><i class="fas fa-capsules"></i> Resources <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#faqs"><i class="fas fa-question-circle"></i> FAQs</a>
+                            <a href="#downloads"><i class="fas fa-download"></i> Downloads</a>
+                            <a href="#blog"><i class="fas fa-newspaper"></i> Health Blog</a>
+                            <a href="#testimonials"><i class="fas fa-star"></i> Testimonials</a>
                         </div>
                     </li>
-                    <li><a href="#contact"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
                 </ul>
             </nav>
             <div class="nav-actions">
-                <!-- Search Bar -->
-                <div class="search-container">
-                    <button class="search-toggle" id="searchToggle">
-                        <i class="fas fa-search"></i>
-                    </button>
-                    <div class="search-overlay" id="searchOverlay">
-                        <div class="search-box">
-                            <input type="text" placeholder="Search services, doctors, articles..." id="searchInput">
-                            <button class="search-submit">
-                                <i class="fas fa-search"></i>
-                            </button>
-                            <button class="search-close" id="searchClose">
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                        <div class="search-results" id="searchResults"></div>
-                    </div>
-                </div>
-
-                <!-- Notifications -->
-                <div class="notification-container">
-                    <button class="notification-btn" id="notificationBtn">
-                        <i class="fas fa-bell"></i>
-                        <span class="notification-badge">3</span>
-                    </button>
-                    <div class="notification-dropdown" id="notificationDropdown">
-                        <div class="notification-header">
-                            <h4>Notifications</h4>
-                            <button class="mark-read">Mark all read</button>
-                        </div>
-                        <div class="notification-list">
-                            <div class="notification-item unread">
-                                <div class="notification-icon">
-                                    <i class="fas fa-calendar-check"></i>
-                                </div>
-                                <div class="notification-content">
-                                    <p>Your appointment with Dr. Johnson is confirmed</p>
-                                    <span class="notification-time">2 hours ago</span>
-                                </div>
-                            </div>
-                            <div class="notification-item unread">
-                                <div class="notification-icon">
-                                    <i class="fas fa-file-medical"></i>
-                                </div>
-                                <div class="notification-content">
-                                    <p>Your lab results are now available</p>
-                                    <span class="notification-time">1 day ago</span>
-                                </div>
-                            </div>
-                            <div class="notification-item">
-                                <div class="notification-icon">
-                                    <i class="fas fa-newspaper"></i>
-                                </div>
-                                <div class="notification-content">
-                                    <p>New health article: Heart Health Tips</p>
-                                    <span class="notification-time">3 days ago</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                <button class="nav-icon-btn search-btn" id="searchBtn" title="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="nav-icon-btn notification-btn" id="notificationBtn" title="Notifications">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </button>
                 <button class="appointment-btn" id="bookAppointmentBtn">
                     <i class="fas fa-calendar-check"></i> Book Appointment
                 </button>
@@ -729,24 +604,21 @@
     </section>
 
     <!-- Newsletter Section -->
-    <section class="newsletter-section interactive-bg">
+    <section class="newsletter-section">
         <div class="container">
-            <div class="newsletter-container animate-on-scroll glass-card">
+            <div class="newsletter-container animate-on-scroll">
                 <div class="newsletter-content">
-                    <h2>Stay Updated with <span class="highlight-text gradient-text">Health Tips</span></h2>
+                    <h2>Stay Updated with <span class="highlight-text">Health Tips</span></h2>
                     <p>Subscribe to our newsletter for the latest health news, wellness tips, and clinic updates.</p>
                 </div>
                 <form id="newsletterForm" class="newsletter-form">
                     <div class="form-group">
                         <input type="email" placeholder="Your email address" required>
-                        <button type="submit" class="subscribe-btn btn-magnetic">Subscribe</button>
+                        <button type="submit" class="subscribe-btn">Subscribe</button>
                     </div>
                     <p class="privacy-note">We respect your privacy. Your information will never be shared with third parties.</p>
                 </form>
             </div>
-            <!-- Morphing shapes for visual interest -->
-            <div class="morphing-shape floating-element"></div>
-            <div class="morphing-shape floating-element"></div>
         </div>
     </section>
 
@@ -894,394 +766,6 @@
         </div>
     </section>
 
-    <!-- Health Blog Section -->
-    <section id="blog" class="blog-section">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <h2>Health <span class="highlight-text">Blog</span></h2>
-                <p>Stay informed with the latest health tips and medical insights</p>
-            </div>
-            <div class="blog-grid">
-                <div class="blog-card animate-on-scroll">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=400&q=80" alt="Heart Health">
-                        <div class="blog-category">Cardiology</div>
-                    </div>
-                    <div class="blog-content">
-                        <h3>Understanding Heart Disease Prevention</h3>
-                        <p>Learn about the key factors that contribute to heart health and how to maintain a healthy cardiovascular system.</p>
-                        <div class="blog-meta">
-                            <span><i class="fas fa-calendar"></i> Dec 15, 2025</span>
-                            <span><i class="fas fa-user-md"></i> Dr. Sarah Johnson</span>
-                        </div>
-                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="blog-card animate-on-scroll">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=400&q=80" alt="Mental Health">
-                        <div class="blog-category">Mental Health</div>
-                    </div>
-                    <div class="blog-content">
-                        <h3>Managing Stress in Modern Life</h3>
-                        <p>Practical strategies for maintaining mental wellness and managing stress in today's fast-paced world.</p>
-                        <div class="blog-meta">
-                            <span><i class="fas fa-calendar"></i> Dec 12, 2025</span>
-                            <span><i class="fas fa-user-md"></i> Dr. Michael Chen</span>
-                        </div>
-                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="blog-card animate-on-scroll">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=400&q=80" alt="Children's Health">
-                        <div class="blog-category">Pediatrics</div>
-                    </div>
-                    <div class="blog-content">
-                        <h3>Childhood Vaccinations: What Parents Need to Know</h3>
-                        <p>Essential information about childhood immunization schedules and the importance of vaccines.</p>
-                        <div class="blog-meta">
-                            <span><i class="fas fa-calendar"></i> Dec 10, 2025</span>
-                            <span><i class="fas fa-user-md"></i> Dr. Emily Rodriguez</span>
-                        </div>
-                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="view-all animate-on-scroll">
-                <button class="view-all-btn">View All Articles <i class="fas fa-arrow-right"></i></button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Health Tips Carousel Section -->
-    <section class="health-tips-section">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <h2>Daily <span class="highlight-text">Health Tips</span></h2>
-                <p>Quick tips for maintaining a healthy lifestyle</p>
-            </div>
-            <div class="tips-carousel">
-                <div class="tip-card animate-on-scroll">
-                    <div class="tip-icon">
-                        <i class="fas fa-apple-alt"></i>
-                    </div>
-                    <h3>Eat More Fruits</h3>
-                    <p>Incorporate at least 5 servings of fruits and vegetables into your daily diet for optimal nutrition.</p>
-                </div>
-                <div class="tip-card animate-on-scroll">
-                    <div class="tip-icon">
-                        <i class="fas fa-running"></i>
-                    </div>
-                    <h3>Stay Active</h3>
-                    <p>Aim for at least 30 minutes of moderate exercise daily to maintain cardiovascular health.</p>
-                </div>
-                <div class="tip-card animate-on-scroll">
-                    <div class="tip-icon">
-                        <i class="fas fa-moon"></i>
-                    </div>
-                    <h3>Get Enough Sleep</h3>
-                    <p>Adults should aim for 7-9 hours of quality sleep each night for optimal health.</p>
-                </div>
-                <div class="tip-card animate-on-scroll">
-                    <div class="tip-icon">
-                        <i class="fas fa-hand-holding-water"></i>
-                    </div>
-                    <h3>Stay Hydrated</h3>
-                    <p>Drink at least 8 glasses of water daily to maintain proper hydration and bodily functions.</p>
-                </div>
-                <div class="tip-card animate-on-scroll">
-                    <div class="tip-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Mental Wellness</h3>
-                    <p>Practice mindfulness and stress-reduction techniques to support mental health.</p>
-                </div>
-            </div>
-            <div class="carousel-controls">
-                <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
-                <div class="carousel-dots">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
-                <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Health Dashboard Section -->
-    <section id="health-dashboard" class="health-dashboard-section">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <h2>Health <span class="highlight-text gradient-text">Dashboard</span></h2>
-                <p>Track your health metrics and get personalized insights</p>
-            </div>
-            <div class="dashboard-grid">
-                <div class="dashboard-card animate-on-scroll glass-card">
-                    <div class="dashboard-header">
-                        <div class="metric-icon">
-                            <i class="fas fa-heartbeat"></i>
-                        </div>
-                        <div class="metric-info">
-                            <h3>Heart Rate</h3>
-                            <span class="metric-value">72 <small>bpm</small></span>
-                        </div>
-                    </div>
-                    <div class="metric-chart">
-                        <div class="chart-bar" style="height: 72%"></div>
-                        <div class="chart-bar" style="height: 68%"></div>
-                        <div class="chart-bar" style="height: 75%"></div>
-                        <div class="chart-bar" style="height: 70%"></div>
-                        <div class="chart-bar" style="height: 72%"></div>
-                    </div>
-                    <div class="metric-status">
-                        <span class="status-normal">Normal Range</span>
-                    </div>
-                </div>
-                <div class="dashboard-card animate-on-scroll glass-card">
-                    <div class="dashboard-header">
-                        <div class="metric-icon">
-                            <i class="fas fa-weight"></i>
-                        </div>
-                        <div class="metric-info">
-                            <h3>Weight</h3>
-                            <span class="metric-value">68.5 <small>kg</small></span>
-                        </div>
-                    </div>
-                    <div class="weight-tracker">
-                        <div class="weight-circle">
-                            <div class="weight-fill" style="stroke-dasharray: 283; stroke-dashoffset: 85;"></div>
-                        </div>
-                        <div class="weight-target">Target: 65kg</div>
-                    </div>
-                    <div class="metric-status">
-                        <span class="status-good">On Track</span>
-                    </div>
-                </div>
-                <div class="dashboard-card animate-on-scroll glass-card">
-                    <div class="dashboard-header">
-                        <div class="metric-icon">
-                            <i class="fas fa-moon"></i>
-                        </div>
-                        <div class="metric-info">
-                            <h3>Sleep Quality</h3>
-                            <span class="metric-value">8.2 <small>hrs</small></span>
-                        </div>
-                    </div>
-                    <div class="sleep-chart">
-                        <div class="sleep-bar deep" style="width: 25%"></div>
-                        <div class="sleep-bar rem" style="width: 20%"></div>
-                        <div class="sleep-bar light" style="width: 35%"></div>
-                        <div class="sleep-bar awake" style="width: 20%"></div>
-                    </div>
-                    <div class="sleep-legend">
-                        <span class="legend-item deep">Deep</span>
-                        <span class="legend-item rem">REM</span>
-                        <span class="legend-item light">Light</span>
-                        <span class="legend-item awake">Awake</span>
-                    </div>
-                </div>
-                <div class="dashboard-card animate-on-scroll glass-card">
-                    <div class="dashboard-header">
-                        <div class="metric-icon">
-                            <i class="fas fa-running"></i>
-                        </div>
-                        <div class="metric-info">
-                            <h3>Activity</h3>
-                            <span class="metric-value">8,450 <small>steps</small></span>
-                        </div>
-                    </div>
-                    <div class="activity-ring">
-                        <div class="activity-circle">
-                            <div class="activity-fill" style="stroke-dasharray: 283; stroke-dashoffset: 56;"></div>
-                        </div>
-                        <div class="activity-goal">Goal: 10,000</div>
-                    </div>
-                    <div class="metric-status">
-                        <span class="status-warning">Almost There</span>
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard-actions animate-on-scroll">
-                <button class="cta-primary btn-magnetic">View Full Dashboard</button>
-                <button class="cta-secondary">Set Health Goals</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Symptom Checker Section -->
-    <section id="symptom-checker" class="symptom-checker-section">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <h2>Symptom <span class="highlight-text">Checker</span></h2>
-                <p>Get preliminary health insights based on your symptoms</p>
-            </div>
-            <div class="symptom-checker-container">
-                <div class="symptom-input animate-on-scroll glass-card">
-                    <h3>What symptoms are you experiencing?</h3>
-                    <div class="symptom-search">
-                        <input type="text" placeholder="Search symptoms (e.g., headache, fever, cough)" id="symptomSearch">
-                        <button class="search-btn">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
-                    <div class="common-symptoms">
-                        <button class="symptom-tag" data-symptom="headache">Headache</button>
-                        <button class="symptom-tag" data-symptom="fever">Fever</button>
-                        <button class="symptom-tag" data-symptom="cough">Cough</button>
-                        <button class="symptom-tag" data-symptom="fatigue">Fatigue</button>
-                        <button class="symptom-tag" data-symptom="nausea">Nausea</button>
-                        <button class="symptom-tag" data-symptom="chest-pain">Chest Pain</button>
-                        <button class="symptom-tag" data-symptom="shortness-breath">Shortness of Breath</button>
-                        <button class="symptom-tag" data-symptom="dizziness">Dizziness</button>
-                    </div>
-                    <div class="selected-symptoms" id="selectedSymptoms"></div>
-                    <button class="cta-primary btn-magnetic" id="checkSymptomsBtn">Check Symptoms</button>
-                </div>
-                <div class="symptom-results animate-on-scroll glass-card">
-                    <h3>Possible Conditions</h3>
-                    <div class="results-placeholder">
-                        <i class="fas fa-stethoscope"></i>
-                        <p>Select symptoms above to get preliminary health insights</p>
-                        <small>This is not a substitute for professional medical advice</small>
-                    </div>
-                    <div class="results-list" id="resultsList" style="display: none;"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Virtual Tour Section -->
-    <section id="virtual-tour" class="virtual-tour-section">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <h2>Virtual <span class="highlight-text">Tour</span></h2>
-                <p>Explore our modern facilities from the comfort of your home</p>
-            </div>
-            <div class="tour-container">
-                <div class="tour-viewer animate-on-scroll">
-                    <div class="tour-image">
-                        <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=800&q=80" alt="Clinic Reception">
-                        <div class="tour-overlay">
-                            <h3>Welcome to Soorab Clinic</h3>
-                            <p>Our modern reception area designed for your comfort</p>
-                        </div>
-                    </div>
-                    <div class="tour-controls">
-                        <button class="tour-btn prev">
-                            <i class="fas fa-chevron-left"></i>
-                        </button>
-                        <div class="tour-indicators">
-                            <span class="indicator active"></span>
-                            <span class="indicator"></span>
-                            <span class="indicator"></span>
-                            <span class="indicator"></span>
-                            <span class="indicator"></span>
-                        </div>
-                        <button class="tour-btn next">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="tour-info animate-on-scroll">
-                    <div class="tour-feature">
-                        <div class="feature-icon">
-                            <i class="fas fa-wheelchair"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h4>Accessibility</h4>
-                            <p>Fully accessible facilities with wheelchair ramps and elevators</p>
-                        </div>
-                    </div>
-                    <div class="tour-feature">
-                        <div class="feature-icon">
-                            <i class="fas fa-parking"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h4>Parking</h4>
-                            <p>Convenient parking with 200+ spaces and valet service</p>
-                        </div>
-                    </div>
-                    <div class="tour-feature">
-                        <div class="feature-icon">
-                            <i class="fas fa-wifi"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h4>Free Wi-Fi</h4>
-                            <p>High-speed internet throughout the facility</p>
-                        </div>
-                    </div>
-                    <div class="tour-feature">
-                        <div class="feature-icon">
-                            <i class="fas fa-coffee"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h4>Cafeteria</h4>
-                            <p>Healthy dining options and refreshments available</p>
-                        </div>
-                    </div>
-                    <button class="cta-primary btn-magnetic">Schedule In-Person Tour</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Emergency Services Section -->
-    <section id="emergency" class="emergency-section">
-        <div class="container">
-            <div class="emergency-container animate-on-scroll">
-                <div class="emergency-content">
-                    <div class="emergency-icon">
-                        <i class="fas fa-ambulance"></i>
-                    </div>
-                    <h2>24/7 Emergency Services</h2>
-                    <p>When you need immediate medical attention, we're here for you around the clock.</p>
-                    <div class="emergency-features">
-                        <div class="emergency-feature">
-                            <i class="fas fa-clock"></i>
-                            <span>24/7 Availability</span>
-                        </div>
-                        <div class="emergency-feature">
-                            <i class="fas fa-user-md"></i>
-                            <span>Expert Emergency Team</span>
-                        </div>
-                        <div class="emergency-feature">
-                            <i class="fas fa-ambulance"></i>
-                            <span>Ambulance Service</span>
-                        </div>
-                        <div class="emergency-feature">
-                            <i class="fas fa-heartbeat"></i>
-                            <span>Life Support Equipment</span>
-                        </div>
-                    </div>
-                    <div class="emergency-actions">
-                        <button class="emergency-call-btn btn-magnetic">
-                            <i class="fas fa-phone"></i> Call Emergency: (123) 456-7890
-                        </button>
-                        <button class="emergency-info-btn">
-                            <i class="fas fa-info-circle"></i> Emergency Info
-                        </button>
-                    </div>
-                </div>
-                <div class="emergency-stats">
-                    <div class="stat-circle">
-                        <div class="stat-number" data-count="5">0</div>
-                        <div class="stat-label">Min Response Time</div>
-                    </div>
-                    <div class="stat-circle">
-                        <div class="stat-number" data-count="98">0</div>
-                        <div class="stat-label">Success Rate %</div>
-                    </div>
-                    <div class="stat-circle">
-                        <div class="stat-number" data-count="50">0</div>
-                        <div class="stat-label">Emergency Beds</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Downloads Section -->
     <section id="downloads" class="downloads-section">
         <div class="container">
@@ -1290,7 +774,7 @@
                 <p>Downloadable forms, guides, and educational materials</p>
             </div>
             <div class="downloads-grid">
-                <div class="download-card animate-on-scroll glass-card">
+                <div class="download-card animate-on-scroll">
                     <div class="download-icon">
                         <i class="fas fa-file-medical"></i>
                     </div>
@@ -1300,7 +784,7 @@
                         <i class="fas fa-download"></i> Download Forms (PDF)
                     </a>
                 </div>
-                <div class="download-card animate-on-scroll glass-card">
+                <div class="download-card animate-on-scroll">
                     <div class="download-icon">
                         <i class="fas fa-heartbeat"></i>
                     </div>
@@ -1310,7 +794,7 @@
                         <i class="fas fa-download"></i> View Health Guides
                     </a>
                 </div>
-                <div class="download-card animate-on-scroll glass-card">
+                <div class="download-card animate-on-scroll">
                     <div class="download-icon">
                         <i class="fas fa-prescription"></i>
                     </div>
@@ -1320,7 +804,7 @@
                         <i class="fas fa-download"></i> Download Template
                     </a>
                 </div>
-                <div class="download-card animate-on-scroll glass-card">
+                <div class="download-card animate-on-scroll">
                     <div class="download-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
@@ -1403,46 +887,108 @@
         </div>
     </footer>
 
-    <!-- Mobile Bottom Navigation Bar -->
-    <nav class="mobile-bottom-nav" id="mobileBottomNav">
-        <div class="progress-indicator"></div>
-        <a href="#home" class="mobile-nav-item active" data-section="home" data-tooltip="Welcome to Soorab Clinic">
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-bottom-nav">
+        <a href="#home" class="nav-item active" data-section="home">
             <i class="fas fa-home"></i>
             <span>Home</span>
         </a>
-        <a href="#services" class="mobile-nav-item" data-section="services" data-tooltip="Our Medical Services">
+        <a href="#services" class="nav-item" data-section="services">
             <i class="fas fa-heartbeat"></i>
             <span>Services</span>
         </a>
-        <a href="#doctors" class="mobile-nav-item" data-section="doctors" data-tooltip="Meet Our Doctors">
+        <a href="#doctors" class="nav-item" data-section="doctors">
             <i class="fas fa-user-md"></i>
             <span>Doctors</span>
         </a>
-        <a href="#about" class="mobile-nav-item" data-section="about" data-tooltip="About Soorab Clinic">
-            <i class="fas fa-info-circle"></i>
-            <span>About</span>
-        </a>
-        <a href="#blog" class="mobile-nav-item" data-section="blog" data-tooltip="Health Blog & Articles">
-            <i class="fas fa-newspaper"></i>
-            <span>Blog</span>
-        </a>
-        <a href="#faqs" class="mobile-nav-item" data-section="faqs" data-tooltip="Frequently Asked Questions">
-            <i class="fas fa-question-circle"></i>
-            <span>FAQs</span>
-        </a>
-        <a href="#patient-portal" class="mobile-nav-item" data-section="patient-portal" data-tooltip="Patient Portal Access">
-            <i class="fas fa-user"></i>
-            <span>Portal</span>
-        </a>
-        <a href="#contact" class="mobile-nav-item" data-section="contact" data-tooltip="Contact Us">
+        <a href="#contact" class="nav-item" data-section="contact">
             <i class="fas fa-envelope"></i>
             <span>Contact</span>
         </a>
-        <a href="#appointment" class="mobile-nav-item" data-section="appointment" data-tooltip="Book Appointment">
-            <i class="fas fa-calendar-plus"></i>
-            <span>Book</span>
+        <a href="#patient-portal" class="nav-item" data-section="profile">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
         </a>
     </nav>
+
+    <!-- Search Overlay -->
+    <div id="searchOverlay" class="search-overlay">
+        <div class="search-container">
+            <div class="search-header">
+                <h3>Search Our Services</h3>
+                <button class="close-search">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="search-input-container">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search for services, doctors, or information...">
+            </div>
+            <div class="search-results">
+                <div class="quick-links">
+                    <h4>Quick Links</h4>
+                    <div class="link-grid">
+                        <a href="#services" class="quick-link">
+                            <i class="fas fa-heart"></i>
+                            <span>Cardiology</span>
+                        </a>
+                        <a href="#services" class="quick-link">
+                            <i class="fas fa-brain"></i>
+                            <span>Neurology</span>
+                        </a>
+                        <a href="#doctors" class="quick-link">
+                            <i class="fas fa-user-md"></i>
+                            <span>Find Doctor</span>
+                        </a>
+                        <a href="#appointment" class="quick-link">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Book Appointment</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Dropdown -->
+    <div id="notificationDropdown" class="notification-dropdown">
+        <div class="notification-header">
+            <h4>Notifications</h4>
+            <span class="notification-count">3</span>
+        </div>
+        <div class="notification-list">
+            <div class="notification-item unread">
+                <div class="notification-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <div class="notification-content">
+                    <p>Your appointment with Dr. Johnson is confirmed for tomorrow at 10:00 AM</p>
+                    <span class="notification-time">2 hours ago</span>
+                </div>
+            </div>
+            <div class="notification-item unread">
+                <div class="notification-icon">
+                    <i class="fas fa-file-medical"></i>
+                </div>
+                <div class="notification-content">
+                    <p>Your lab results are now available in your patient portal</p>
+                    <span class="notification-time">1 day ago</span>
+                </div>
+            </div>
+            <div class="notification-item">
+                <div class="notification-icon">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <div class="notification-content">
+                    <p>Don't forget your annual health checkup. Schedule now for better rates.</p>
+                    <span class="notification-time">3 days ago</span>
+                </div>
+            </div>
+        </div>
+        <div class="notification-footer">
+            <button class="view-all-notifications">View All Notifications</button>
+        </div>
+    </div>
 
     <!-- Back to Top Button -->
     <button id="backToTop" class="back-to-top">
